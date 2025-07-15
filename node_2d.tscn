@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bju4otuuo1ekl"]
+
+[ext_resource type="Shader" path="res://sqishes.gdshader" id="1_nkbng"]
+[ext_resource type="Texture2D" uid="uid://v3akwbbub5nk" path="res://icon.svg" id="2_leuyt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_trtnh"]
+shader = ExtResource("1_nkbng")
+shader_parameter/vertical = false
+shader_parameter/resize_active = false
+shader_parameter/resize_global = 1.0
+shader_parameter/resize_x = 1.0
+shader_parameter/resize_y = 1.0
+shader_parameter/rotate_active = false
+shader_parameter/rotate = 2.5
+shader_parameter/stretch_ative = false
+shader_parameter/stretch = null
+shader_parameter/pack_active = true
+shader_parameter/pack_curved = -0.551
+shader_parameter/pack_center = 0.787
+shader_parameter/pack_global = 1.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_trtnh")
+position = Vector2(647.25, 154.5)
+scale = Vector2(2.40234, 1.64844)
+texture = ExtResource("2_leuyt")
